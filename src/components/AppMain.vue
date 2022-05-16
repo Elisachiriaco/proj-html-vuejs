@@ -38,40 +38,37 @@
                 <div class="col-4 text-center justify-content-center">
                     <h3>Find a freshly baked product perfect for you </h3>
                     <p>Integer a nihb vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.</p>
-                    <div class="mybutton-violet text-center">
+                    <span class="mybutton-violet text-center px-4 py-2">
                         <a href="#">Shop All Products</a>
-                    </div>
+                    </span>
                 </div>
                 <div class="col-8 d-flex flex-nowrap cookies justify-content-end">
-                    <div class="arrow-left">
+                    <div class="smarrow-left">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
+                <div>
                     <img src="../assets/images/choco-chip-cookies-200x255.jpg" alt="cookies">
+                    <h4>Choco Chip Cookies</h4>
+                    <p class="price">$19.00 - $39.00</p>
+                </div>
+                <div>
                     <img src="../assets/images/strawberry-jam-cookies-200x255.jpg" alt="cookies">
+                    <h4>Strawberry Jam Cookies</h4>
+                    <p class="price">$24.00 - $62.00</p>
+                </div>
+                <div>
                     <img src="../assets/images/strawberry-donut-200x255.jpg" alt="donuts">
+                    <h4>Strawberry Donut</h4>
+                    <p class="price">$24.00 - $42.00</p>
+                </div>
+                <div>
                     <img src="../assets/images/perfect-macarons-200x255.jpg" alt="macarons">
-                    <div class="arrow-right">
+                    <h4>Perfect Macarons</h4>
+                    <p class="price">$18.00 - $52.00</p>
+                    <div class="smarrow-right">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3 justify-content-end">
-                    <h4>Choco Chip Cookies</h4>
-                    <span>$19.00 - $39.00</span>
-                </div>
-                <div class="col-3 justify-content-end">
-                    <h4>Choco Chip Cookies</h4>
-                    <span>$19.00 - $39.00</span>
-                </div>
-                <div class="col-3 justify-content-end">
-                    <h4>Choco Chip Cookies</h4>
-                    <span>$19.00 - $39.00</span>
-                </div>
-                <div class="col-3 justify-content-end">
-                    <h4>Choco Chip Cookies</h4>
-                    <span>$19.00 - $39.00</span>
                 </div>
             </div>
         </section>
@@ -109,7 +106,7 @@ section{
     width: 30px;
     height: 60px;
     line-height: 60px;
-    background-color: rgba($color: $perfume, $alpha: 8.0);
+    background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
 }
@@ -120,10 +117,42 @@ section{
     width: 30px;
     height: 60px;
     line-height: 60px;
-    background-color: rgba($color: $perfume, $alpha: 8.0);
+    background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
 }
+
+.smarrow-left{
+    position: absolute;
+    top: 30%;
+    left: 53px;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba($color: $perfume, $alpha: 0.7);
+    color: $white;
+    text-align: center;
+    i{
+        font-size: 8px;
+    }
+}
+
+.smarrow-right{
+    position: absolute;
+    top: 30%;
+    right: 16px;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba($color: $perfume, $alpha: 0.7);
+    color: $white;
+    text-align: center;
+    i{
+        font-size: 8px;
+    }
+}
+
+
 
 .wedding img{
     width: 100%;
@@ -131,9 +160,21 @@ section{
 }
 
 .shop{
-    margin-top: 20px;
+    margin-top: 120px;
+    margin-bottom: 80px;
     img{
     width: 175px;
+    }
 }
+h4{
+    font-size: 12px;
+    color: $daisy;
+    text-align: center;
+    font-weight: 700;
 }
-</style>
+.price{
+    text-align: center;
+    font-size: 10px;
+    color: $daisy;
+}
+</style> 

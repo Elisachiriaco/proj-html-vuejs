@@ -72,12 +72,17 @@
                 </div>
             </div>
         </section>
+        <app-card />
     </div>
 </template>
 
 <script>
+import AppCard from './AppCard.vue'
 export default {
-    name:'AppMain'
+    name:'AppMain',
+    components: {
+        AppCard
+    }
 }
 </script>
 
@@ -153,7 +158,6 @@ section{
 }
 
 
-
 .wedding img{
     width: 100%;
     padding-left: 20px;
@@ -177,4 +181,5 @@ h4{
     font-size: 10px;
     color: $daisy;
 }
+
 </style> 

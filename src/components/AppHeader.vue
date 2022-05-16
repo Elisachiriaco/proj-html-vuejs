@@ -52,7 +52,7 @@ img{
 li{
   list-style-type: none;
   display: inline;
-  padding: 10px;
+  padding: 14px;
   a{
     color: $daisy;
     text-decoration: none;

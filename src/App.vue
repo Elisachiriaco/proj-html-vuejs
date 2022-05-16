@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-    <app-header />
+    <app-header :datimyNav = "datimyNav" />
     </header>
     <main>
       <app-main />
@@ -16,6 +16,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import dati from './dati.json'
 
 export default {
   name: 'App',
@@ -23,6 +24,11 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
+  },
+  data(){
+    return{
+      datimyNav : dati.myNav
+    }
   }
 }
 </script>

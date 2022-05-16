@@ -1,26 +1,28 @@
-[
-    {
-        "nome" : "Home"
-    },
-    {
-        "nome" : "Shop"
-    },
-    {
-        "nome" : "About"
-    },
-    {
-        "nome" : "Gallery"
-    },
-    {
-        "nome" : "Locations"
-    },
-    {
-        "nome" : "Journal"
-    },
-    {
-        "nome" : "Contact"
-    },
-    {
-        "nome" : "My Account"
-    }   
-]
+{
+    "myNav" : [
+        {
+            "nome" : "Home"
+        },
+        {
+            "nome" : "Shop"
+        },
+        {
+            "nome" : "About"
+        },
+        {
+            "nome" : "Gallery"
+        },
+        {
+            "nome" : "Locations"
+        },
+        {
+            "nome" : "Journal"
+        },
+        {
+            "nome" : "Contact"
+        },
+        {
+            "nome" : "My Account"
+        }
+    ]
+}

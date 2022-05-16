@@ -6,14 +6,7 @@
         </div>
         <div class="col-8 justify-content-end">
         <ul>
-          <li><a href="#">{{myArray[0].nome}}</a></li>
-          <li><a href="#">{{myArray[1].nome}}</a></li>
-          <li><a href="#">{{myArray[2].nome}}</a></li>
-          <li><a href="#">{{myArray[3].nome}}</a></li>
-          <li><a href="#">{{myArray[4].nome}}</a></li>
-          <li><a href="#">{{myArray[5].nome}}</a></li>
-          <li><a href="#">{{myArray[6].nome}}</a></li>
-          <li><a href="#">{{myArray[7].nome}}</a></li>
+          <li v-for="(item, index) in datimyNav" :key="index">{{item.nome}}</li>
           <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </div>
@@ -32,14 +25,9 @@
 </template>
 
 <script>
-import dati from '../dati.json'
 export default {
   name: 'AppHeader',
-  data(){
-    return{
-      myArray: dati,
-    }
-  }
+  props: ["datimyNav"],
 }
 </script>
 
@@ -53,6 +41,7 @@ li{
   list-style-type: none;
   display: inline;
   padding: 14px;
+  color: $daisy;
   a{
     color: $daisy;
     text-decoration: none;

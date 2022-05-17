@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-    <section>
+    <section id="gallery">
         <div class="row mind p-3">
             <div class="col-12">
                 <h2>Tell us what you have in mind</h2>
@@ -36,7 +36,7 @@
         </div>
     </section>
 
-    <section id="location">
+    <section id="locations">
         <div class="row">
             <div class="col-12 justify-content-center text-center">
                 <span class="subtitle">Locations</span>
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    <section id="social">
+    <section id="journal">
         <div class="row">
             <div class="col-3 justify-content-start">
                 <img src="../assets/images/social-1.jpg" alt="">

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <section>
+        <section id="shop">
             <div class="row">
                 <div class="col-4">
                     <span class="subtitle">Our products</span>
@@ -34,7 +34,8 @@
                     </div>
                 </div>
             </div>
-
+        </section>
+        <section id="about">
             <div class="row pt-4">
                 <div class="col-12 justify-content-center text-center">
                     <span class="subtitle">Corporate & weddings</span>

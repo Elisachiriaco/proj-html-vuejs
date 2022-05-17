@@ -1,28 +1,44 @@
 {
     "myNav" : [
         {
-            "nome" : "Home"
+            "nome" : "Home",
+            "active" : "false",
+            "link" : "#home"
         },
         {
-            "nome" : "Shop"
+            "nome" : "Shop",
+            "active" : "false",
+            "link" : "#shop"
         },
         {
-            "nome" : "About"
+            "nome" : "About",
+            "active" : "false",
+            "link" : "#about"
         },
         {
-            "nome" : "Gallery"
+            "nome" : "Gallery",
+            "active" : "false",
+            "link" : "#gallery"
         },
         {
-            "nome" : "Locations"
+            "nome" : "Locations",
+            "active" : "false",
+            "link" : "#locations"
         },
         {
-            "nome" : "Journal"
+            "nome" : "Journal",
+            "active" : "false",
+            "link" : "#journal"
         },
         {
-            "nome" : "Contact"
+            "nome" : "Contact",
+            "active" : "false",
+            "link" : "#contact"
         },
         {
-            "nome" : "My Account"
+            "nome" : "My Account",
+            "active" : "false",
+            "link" : "#" 
         }
     ],
     "myFooter" : [

@@ -1,12 +1,14 @@
 <template>
-    <div class="container">
+    <div class="container" id="home">
       <div class="row align-items-center">
         <div class="col-4 justify-content-start">
           <img src="../assets/images/avada-bakery-logo-retina.png" alt="logo">
         </div>
         <div class="col-8 justify-content-end">
         <ul>
-          <li v-for="(item, index) in datimyNav" :key="index">{{item.nome}}</li>
+          <li v-for="(item, index) in datimyNav" :key="index" :class="{'active' : index === activeIndex}" @click="activeIndex = index">
+            <a :href="item.link">{{item.nome}}</a>
+          </li>
           <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </div>
@@ -28,6 +30,11 @@
 export default {
   name: 'AppHeader',
   props: ["datimyNav"],
+  data(){
+    return{
+      activeIndex : 0
+    }
+  }
 }
 </script>
 
@@ -41,6 +48,7 @@ li{
   display: inline;
   padding: 14px;
   color: $daisy;
+  cursor: pointer;
   a{
     color: $daisy;
     text-decoration: none;
@@ -55,5 +63,8 @@ p{
 }
 .header-bg{
   padding-top: 100px;
+}
+.active{
+  border-bottom: 2px solid $daisy;
 }
 </style>

@@ -7,7 +7,7 @@
             <a href="#">Shop Now</a>
           </div>
         </div>
-        <div class="container footer-down">
+        <div class="container footer-down" id="contact">
             <div class="row pt-4">
                 <div class="col-8">
                     <img src="../assets/images/avada-bakery-logo-retina.png" alt="logo">
@@ -52,7 +52,7 @@
             <div class="row p-3">
                 <div class="col-12 d-flex justify-content-end">
                     <div class="arrow-up">
-                        <i class="fa-solid fa-chevron-up"></i>
+                        <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
                     </div>
                 </div>
             </div>

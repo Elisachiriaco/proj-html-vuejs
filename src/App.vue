@@ -45,16 +45,6 @@ header{
   width: 100%;
   height: 600px;
 }
-li{
-  list-style-type: none;
-  display: inline;
-  padding: 14px;
-  color: $daisy;
-  a{
-    color: $daisy;
-    text-decoration: none;
-  }
-}
 
 .subtitle{
   text-transform: uppercase;
@@ -89,5 +79,9 @@ li{
 h3{
     color: $daisy;
     padding-bottom: 15px;
+}
+h2{
+  color: $white;
+  font-size: 40px;
 }
 </style>

@@ -11,6 +11,13 @@
                 </div>
                 <div class="col-8 d-flex flex-nowrap cookies justify-content-end">
                     <img src="../assets/images/choco-chip-cookies-400x510.jpg" alt="cookies">
+                    <div class="hover-cookies justify-content-center text-center align-items-center">
+                        <div class="text-cookies">
+                        <h5>Choco Chip Cookies</h5>
+                        <span>Cookies Pastries</span>
+                        <p>$19.00 - 39.00</p>
+                        </div>
+                    </div>
                     <div class="arrow-left">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
@@ -18,6 +25,13 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     <img src="../assets/images/strawberry-jam-cookies-400x510.jpg" alt="cookies">
+                    <div class="hover-cookies justify-content-center text-center align-items-center">
+                        <div class="text-cookies">
+                        <h5>Choco Chip Cookies</h5>
+                        <span>Cookies Pastries</span>
+                        <p>$19.00 - 39.00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -26,11 +40,27 @@
                     <span class="subtitle">Corporate & weddings</span>
                     <h3>Baking Special Moments</h3>
                 </div>
-                <div class="col-6 wedding justify-content-start pt-2">
-                    <img src="../assets/images/corporate-bg.jpg" alt="wedding">
+            </div>
+            <div class="row">
+                <div class="col-6 event pt-2 justify-content-center">
+                    <img class="img-hover" src="../assets/images/corporate-hover-bg.jpg" alt="">
+                    <div class="text-hover text-center">
+                    <span>International Bakery</span>
+                    <h5>Corporate Events</h5>
+                    <div class="mybutton-violet text-center">
+                        <a href="#">Explore more</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-6 wedding justify-content-end pt-2">
-                    <img src="../assets/images/wedding-bg.jpg" alt="wedding">
+                <div class="col-6 wedding pt-2 justify-content-center">
+                    <img class="img-hover" src="../assets/images/wedding-hover-bg.jpg" alt="">
+                    <div class="text-hover text-center">
+                    <span>Private dining hall</span>
+                    <h5>Wedding & Parties</h5>
+                    <div class="mybutton-violet text-center">
+                        <a href="#">Explore more</a>
+                    </div>
+                    </div>
                 </div>
             </div>
 
@@ -96,6 +126,26 @@ export default {
         margin-bottom: 20px;
     }
 }
+.cookies:hover .hover-cookies{
+    display: inline-block;
+}
+.text-cookies{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hover-cookies{
+    position: absolute;
+    top: 5px;
+    left: 53px;
+    z-index: 30;
+    color: $white;
+    display: none;
+    background-color: rgba($color: $black, $alpha: 0.2);
+    width: 340px;
+    height: 94%;
+}
 section{
     margin-top: 100px;
 }
@@ -154,11 +204,56 @@ section{
 }
 
 
-.wedding img{
-    width: 100%;
-    padding-left: 20px;
+.event{
+    background-image: url(../assets/images/corporate-bg.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
 }
-
+.event:hover .img-hover{
+    display: inline-block;
+}
+.wedding:hover .img-hover{
+    display: inline-block;
+}
+.wedding:hover .text-hover{
+    display: inline-block;
+}
+.event:hover .text-hover{
+    display: inline-block;
+}
+.wedding{
+    background-image: url(../assets/images/wedding-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height:500px;
+}
+.img-hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    z-index: 20;
+}
+.text-hover{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    color: $white;
+    span{
+        text-transform: uppercase;
+        font-size: 8px;
+    }
+    h5{
+        font-size: 22px;
+    }
+}
 .shop{
     margin-top: 120px;
     margin-bottom: 80px;

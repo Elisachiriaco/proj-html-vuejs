@@ -7,7 +7,7 @@
       <app-main />
     </main>
     <footer>
-      <app-footer />
+      <app-footer :datimyFooter = "datimyFooter" :datiCopyright = "datiCopyright"/>
     </footer>
   </div>
 </template>
@@ -27,7 +27,9 @@ export default {
   },
   data(){
     return{
-      datimyNav : dati.myNav
+      datimyNav : dati.myNav,
+      datimyFooter : dati.myFooter,
+      datiCopyright : dati.copyright,
     }
   }
 }
@@ -43,6 +45,17 @@ header{
   width: 100%;
   height: 600px;
 }
+li{
+  list-style-type: none;
+  display: inline;
+  padding: 14px;
+  color: $daisy;
+  a{
+    color: $daisy;
+    text-decoration: none;
+  }
+}
+
 .subtitle{
   text-transform: uppercase;
   color: $mamba;
@@ -72,5 +85,9 @@ header{
     color: $white;
     font-size: 12px;
   }
+}
+h3{
+    color: $daisy;
+    padding-bottom: 15px;
 }
 </style>

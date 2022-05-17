@@ -88,10 +88,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/vars.scss';
-h3{
-    color: $daisy;
-    padding-bottom: 15px;
-}
 .cookies{
     position: relative;
     img{

@@ -24,5 +24,42 @@
         {
             "nome" : "My Account"
         }
+    ],
+    "myFooter" : [
+        {
+            "nome" : "Shop"
+        },
+        {
+            "nome" : "About"
+        },
+        {
+            "nome" : "Gallery"
+        },
+        {
+            "nome" : "Locations"
+        },
+        {
+            "nome" : "Journal"
+        },
+        {
+            "nome" : "Contact"
+        },
+        {
+            "nome" : "Orders"
+        }
+    ],
+    "copyright" : [
+        {
+            "title" : "© Copyright 2012 - 2020 |"
+        },
+        {
+            "title" : "Avada Theme by Themefusion |"
+        },
+        {
+            "title" : "All Rights Reserved |"
+        },
+        {
+            "title" : "Powered by WordPress"
+        }
     ]
 }

@@ -37,16 +37,6 @@ img{
   width:40%;
 }
 
-li{
-  list-style-type: none;
-  display: inline;
-  padding: 14px;
-  color: $daisy;
-  a{
-    color: $daisy;
-    text-decoration: none;
-  }
-}
 h1{
   color: $daisy;
 }

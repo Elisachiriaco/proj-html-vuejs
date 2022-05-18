@@ -22,6 +22,21 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+        <div class="prebuilts">
+          <a href="#"> <i class="fa-solid fa-folder-open"></i> <br> Prebuilts</a>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <div class="buy">
+          <a href="#"><i class="fa-solid fa-cart-shopping fa-bounce"></i> 
+          <br> Buy Now</a>
+        </div>
+        </div>
+      </div>
       </div>
     </div>
 </template>
@@ -66,5 +81,54 @@ p{
 }
 .active{
   border-bottom: 2px solid $daisy;
+}
+
+
+.prebuilts{
+  position: fixed;
+  top: 200px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: $white;
+  border-radius: 10px;
+  z-index: 2000;
+  box-shadow: 2px 2px #888888;
+  cursor: pointer;
+  text-align: center;
+  i{
+    font-size: 20px;
+    color: $limed;
+    padding-top: 10px;
+  }
+  a{
+    color: $limed;
+    text-decoration: none;
+    font-size: 10px;
+  }
+}
+
+.buy{
+  position: fixed;
+  top: 120px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  background-color: $white;
+  border-radius: 10px;
+  z-index: 2000;
+  box-shadow: 2px 2px #888888;
+  cursor: pointer;
+  text-align: center;
+  i{
+    font-size: 20px;
+    color: $limed;
+    padding-top: 10px;
+  }
+  a{
+    color: $limed;
+    text-decoration: none;
+    font-size: 10px;
+  }
 }
 </style>

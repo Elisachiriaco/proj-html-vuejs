@@ -113,7 +113,8 @@ export default {
     name:'AppMain',
     components: {
         AppCard
-    }
+    },
+    props : ["datimySlider"]
 }
 </script>
 
@@ -211,6 +212,7 @@ section{
     background-repeat: no-repeat;
     position: relative;
     height: 500px;
+    transition: all 1s;
 }
 .event:hover .img-hover{
     display: inline-block;
@@ -230,6 +232,7 @@ section{
     background-repeat: no-repeat;
     position: relative;
     height:500px;
+    transition: all 1s;
 }
 .img-hover{
     display: none;

@@ -4,7 +4,7 @@
     <app-header :datimyNav = "datimyNav" />
     </header>
     <main>
-      <app-main />
+      <app-main :datimySlider = "datimySlider" />
     </main>
     <footer>
       <app-footer :datimyFooter = "datimyFooter" :datiCopyright = "datiCopyright"/>
@@ -16,7 +16,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
-import dati from './dati.json'
+import dati from './dati.js'
 
 export default {
   name: 'App',
@@ -30,6 +30,7 @@ export default {
       datimyNav : dati.myNav,
       datimyFooter : dati.myFooter,
       datiCopyright : dati.copyright,
+      datimySlider : dati.slider,
     }
   }
 }
@@ -44,6 +45,7 @@ header{
   background-size: cover;
   width: 100%;
   height: 600px;
+  position: relative;
 }
 
 .subtitle{
@@ -58,10 +60,17 @@ header{
   height: 35px;
   border-radius: 4px;
   line-height: 35px;
+  transition: all 0.5s;
   a{
     text-decoration: none;
     color: $daisy;
-    font-size: 10px;
+    font-size: 14px;
+  }
+  &:hover{
+    background-color: $daisy;
+    a{
+      color: $white;
+    }
   }
 }
 .mybutton-violet{
@@ -70,10 +79,18 @@ header{
   height: 35px;
   border-radius: 4px;
   line-height: 35px;
+  transition: all 0.5s;
   a{
     text-decoration: none;
     color: $white;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  &:hover{
+    background-color: $white;
+    border: 2px solid rgba($color: $daisy, $alpha: 0.2);
+    a{
+      color: $daisy;
+    }
   }
 }
 h3{

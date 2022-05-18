@@ -10,3 +10,7 @@ $fa-font-path: './webfonts';
 
 // Styles
 @import './vars.scss';
+
+body{
+    min-width: 1200px;
+}

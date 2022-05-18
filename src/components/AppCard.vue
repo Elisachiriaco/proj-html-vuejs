@@ -146,17 +146,38 @@ p , .number{
 }
 img{
     width: 100%;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 0.9;
+    }
 }
-
+#journal{
+    overflow: hidden;
+}
 .newyork{
     background-image: url(../assets/images/new-york-bk.jpg);
     background-size: cover;
     height: 400px;
+    transition: all 1s;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 0.9;
+    }
 }
 .london{
     background-image: url(../assets/images/london-bk.jpg);
     background-size: cover;
     height: 400px;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 0.9;
+    }
 }
 .newyork-subtitle{
     background-color: rgba($color: $atoll, $alpha: 0.1);

@@ -1,8 +1,8 @@
 <template>
     <div class="container">
     <section id="gallery">
-        <div class="row mind p-3">
-            <div class="col-12">
+        <div class="row mind p-3 justify-content-end">
+            <div class="col-12 ">
                 <h2>Tell us what you have in mind</h2>
                 <div class="number">01</div>
             </div>
@@ -12,25 +12,27 @@
             </div>
         </div>
         <div class="row py-3">
-            <div class="col-6 baking">
+            <div class="col-6 baking p-4">
                 <h2>We start baking</h2>
                 <div class="number">02</div>
+                <div class="p-4">
                 <span class="subtitle">Sweet & delicious</span>
                 <p>Cras consequat lectus vestibulum tortor pulvinar,quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat.</p>
+                </div>
             </div>
-            <div class="col-6 activity">
-                <span class="subtitle">Dont just take our word for it</span>
-                <h3>"Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity."</h3>
-                <p>Rachel Cooper, Founder</p>
+            <div class="col-6 activity p-4">
+                <span class="subtitle py-4">Dont just take our word for it</span>
+                <h3 class="p-4">"Finally found an alternative to the mass produced products. Something that incorporates real organic ingredients, nutrient dense wellness while promoting sustainability and activity."</h3>
+                <p class="px-4">Rachel Cooper, Founder</p>
             </div>
         </div>
         <div class="row delivered p-3">
-            <div class="col-12">
+            <div class="col-12 p-4">
                 <h2>Delivered to your home</h2>
                 <div class="number">03</div>
             </div>
             <div class="col-4">
-                <span>Baked to order & gift wrapped</span>
+                <span class="subtitle">Baked to order & gift wrapped</span>
                 <p>Cras consequat lectus vestibulum tortor pulvinar,quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat,rutrum augue.</p>
             </div>
         </div>
@@ -117,6 +119,10 @@ export default{
     background-size: cover;
     height: 400px;
     position: relative;
+    transition: 1s ease-in-out;
+    &:hover {
+    box-shadow: inset 100px 0px 150px $pearl;
+      }
 }
 .baking{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
@@ -124,6 +130,10 @@ export default{
     background-size: cover;
     height: 400px;
     position: relative;
+    transition: 1s ease-in-out;
+    &:hover {
+    box-shadow: inset 200px 0px 150px $pearl;
+      }
 }
 .activity{
     background-color: $pearl;
@@ -134,6 +144,10 @@ export default{
     background-size: cover;
     height: 400px;
     position: relative;
+    transition: 1s ease-in-out;
+    &:hover {
+    box-shadow: inset 0px 0px 200px $pearl;
+      }
 }
 .number{
     position: absolute;
@@ -190,7 +204,7 @@ img{
 .social-instagram{
     background-color: rgba($color: $pearl, $alpha: 0.8);
 }
-#location, #social{
+#locations, #journal{
     margin-top: 120px;
 }
 .information{

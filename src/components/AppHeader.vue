@@ -61,7 +61,7 @@ img{
 li{
   list-style-type: none;
   display: inline;
-  padding: 14px;
+  padding: 10px;
   color: $daisy;
   cursor: pointer;
   a{

@@ -19,7 +19,9 @@
             <div class="row">
                 <div class="col-8 pt-4">
                     <ul>
-                        <li v-for="(link,index) in datimyFooter" :key="index">{{link.nome}}</li>
+                        <li v-for="(link,index) in datimyFooter" :key="index" @click="activeIndex = index"> 
+                            <a :href="link.link">{{link.nome}}</a>
+                        </li>
                         <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                 </div>
@@ -64,6 +66,11 @@
 export default {
     name: 'AppFooter',
     props: ["datimyFooter","datiCopyright"],
+    data(){
+        return{
+            activeIndex : 0
+        }
+    }
 }
 </script>
 

@@ -1,6 +1,9 @@
 // bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
+// font
+@import "~@fontsource/quicksand/index.css";
+
 // fontawesome
 $fa-font-path: './webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
@@ -12,5 +15,18 @@ $fa-font-path: './webfonts';
 @import './vars.scss';
 
 body{
+    font-family: $main-font;
     min-width: 1200px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+};

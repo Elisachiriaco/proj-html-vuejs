@@ -49,37 +49,43 @@ const myDati = {
         {
             image : require ('./assets/images/strawberry-jam-cookies-400x510.jpg'),
             active : false 
-        },
-        {
-            image : require ('./assets/images/cookies-with-ice-cream-400x510.jpg'),
-            active : false 
-        },
-        {
-            image : require ('./assets/images/home-bread-400x510.jpg'),
-            active : false 
         }
     ],
     myFooter : [
         {
-            "nome" : "Shop"
+            nome : "Shop",
+            active : "false",
+            link : "#shop"
         },
         {
-            "nome" : "About"
+            nome : "About",
+            active : "false",
+            link : "#about"
         },
         {
-            "nome" : "Gallery"
+            nome : "Gallery",
+            active : "false",
+            link : "#gallery"
         },
         {
-            "nome" : "Locations"
+            nome : "Locations",
+            active : "false",
+            link : "#locations"
         },
         {
-            "nome" : "Journal"
+            nome : "Journal",
+            active : "false",
+            link : "#journal"
         },
         {
-            "nome" : "Contact"
+            nome : "Contact",
+            active : "false",
+            link : "#contact"
         },
         {
-            "nome" : "Orders"
+            nome : "Orders",
+            active : "false",
+            link : "#"
         }
     ],
     copyright : [

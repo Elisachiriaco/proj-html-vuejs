@@ -10,28 +10,31 @@
                     </div>
                 </div>
                 <div class="col-8 d-flex flex-nowrap cookies justify-content-end">
-                    <img src="../assets/images/choco-chip-cookies-400x510.jpg" alt="cookies">
+                    <div v-for="(image, index) in datimySlider" :key="index">
+                    <img :src="image.image" alt="cookies">
+                    </div>
                     <div class="hover-cookies justify-content-center text-center align-items-center">
                         <div class="text-cookies">
                         <h5>Choco Chip Cookies</h5>
                         <span>Cookies Pastries</span>
                         <p>$19.00 - 39.00</p>
                         </div>
+                    </div> 
+                    <div class="hover-cookiesrg justify-content-center text-center align-items-center">
+                        <div class="text-cookies">
+                        <h5>Strawberry Jam Cookies</h5>
+                        <span>Cookies Pastries</span>
+                        <p>$24.00 - $62.00</p>
+                        </div>
                     </div>
+                    <div class="col">
                     <div class="arrow-left">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
                     <div class="arrow-right">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
-                    <img src="../assets/images/strawberry-jam-cookies-400x510.jpg" alt="cookies">
-                    <div class="hover-cookies justify-content-center text-center align-items-center">
-                        <div class="text-cookies">
-                        <h5>Choco Chip Cookies</h5>
-                        <span>Cookies Pastries</span>
-                        <p>$19.00 - 39.00</p>
-                        </div>
-                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -114,7 +117,13 @@ export default {
     components: {
         AppCard
     },
-    props : ["datimySlider"]
+    props : ["datimySlider"],
+    data(){
+        return{
+        }
+    },
+    methods : {
+    }
 }
 </script>
 
@@ -131,6 +140,9 @@ export default {
 .cookies:hover .hover-cookies{
     display: inline-block;
 }
+.cookies:hover .hover-cookiesrg{
+    display: inline-block;
+}
 .text-cookies{
     position: absolute;
     top: 50%;
@@ -140,13 +152,24 @@ export default {
 .hover-cookies{
     position: absolute;
     top: 5px;
-    left: 53px;
+    left: 15px;
     z-index: 30;
     color: $white;
     display: none;
     background-color: rgba($color: $black, $alpha: 0.2);
     width: 340px;
     height: 94%;
+}
+.hover-cookiesrg{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 340px;
+    height: 94%;
+    display: none;
+    background-color: rgba($color: $black, $alpha: 0.2);
+    color: $white;
+    z-index: 30;
 }
 section{
     margin-top: 100px;
@@ -155,7 +178,7 @@ section{
 .arrow-left{
     position: absolute;
     top: 42%;
-    left: 53px;
+    left: 15px;
     width: 30px;
     height: 60px;
     line-height: 60px;
@@ -166,7 +189,7 @@ section{
 .arrow-right{
     position: absolute;
     top: 42%;
-    right: 16px;
+    right: 50px;
     width: 30px;
     height: 60px;
     line-height: 60px;

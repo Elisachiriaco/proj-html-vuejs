@@ -20,8 +20,10 @@
                 data-aos-offset="0"
                 data-aos-delay="500"
                 data-aos-id="super-duper">
-                    <div v-for="(image, index) in datimySlider" :key="index">
-                    <img :src="image.image" alt="cookies">
+                    <div 
+                    tabindex="0" @muoseleave="autoScroll" @mouseover="stopAutoScroll">
+                    <img :src="datimySlider[activeIndex].image" alt="cookies">
+                    <img :src="datimySlider[activeIndex].secondImage" alt="cookies">
                     </div>
                     <div class="hover-cookies justify-content-center text-center align-items-center">
                         <div class="text-cookies">
@@ -38,10 +40,10 @@
                         </div>
                     </div>
                     <div class="col">
-                    <div class="arrow-left">
+                    <div class="arrow-left" @click="prevSlide(activeIndex)">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
-                    <div class="arrow-right">
+                    <div class="arrow-right" @click="nextSlide(activeIndex)">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
@@ -144,10 +146,30 @@ export default {
     },
     props : ["datimySlider"],
     data(){
-
+        return{
+            activeIndex : 0,
+            intervalId : null 
+        }
     },
-    methods : {
-
+      methods: {
+        nextSlide(){
+            this.activeIndex = (this.activeIndex === 4) ? 0 : this.activeIndex + 1;
+        },
+        prevSlide(){
+            this.activeIndex = (this.activeIndex === 0) ? 4 : this.activeIndex - 1;
+        },
+        autoScroll(){
+            this.intervalId = setInterval(()=>{
+            this.nextSlide();
+            },2000)
+        },
+        stopAutoScroll(){
+            clearInterval(this.intervalId);
+            this.intervalId = null;
+        },
+    },
+    mounted(){
+      this.autoScroll()
     }
 }
 </script>
@@ -163,13 +185,13 @@ export default {
         margin-bottom: 20px;
     }
 }
-.cookies:hover .hover-cookies{
-    display: inline-block;
-    transition: all 2s;
-}
-.cookies:hover .hover-cookiesrg{
-    display: inline-block;
-}
+// .cookies:hover .hover-cookies{
+//     display: inline-block;
+//     transition: all 2s;
+// }
+// .cookies:hover .hover-cookiesrg{
+//     display: inline-block;
+// }
 .text-cookies{
     position: absolute;
     top: 50%;
@@ -212,6 +234,10 @@ section{
     background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: $perfume;
+    }
 }
 .arrow-right{
     position: absolute;
@@ -223,6 +249,10 @@ section{
     background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: $perfume;
+    }
 }
 
 .smarrow-left{

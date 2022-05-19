@@ -44,10 +44,14 @@ const myDati = {
     slider : [
         {
             image : require ('./assets/images/choco-chip-cookies-400x510.jpg'),
+            secondImage: require ('./assets/images/strawberry-jam-cookies-400x510.jpg'),
+            active : true 
         },
         {
-            image : require ('./assets/images/strawberry-jam-cookies-400x510.jpg'),
-        }
+            image : require ('./assets/images/cookies-with-ice-cream-400x510.jpg'),
+            secondImage : require ('./assets/images/home-bread-400x510.jpg'),
+            active : true 
+        },
     ],
     myFooter : [
         {

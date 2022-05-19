@@ -44,11 +44,9 @@ const myDati = {
     slider : [
         {
             image : require ('./assets/images/choco-chip-cookies-400x510.jpg'),
-            active : false 
         },
         {
             image : require ('./assets/images/strawberry-jam-cookies-400x510.jpg'),
-            active : false 
         }
     ],
     myFooter : [

@@ -2,7 +2,10 @@
     <div>
         <div class="footer-up">
             <span class="subtitle">try our seasonal products</span>
-            <h2>Order for pick-up or delivery to your home</h2>
+            <h2 data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+                data-aos-offset="0">Order for pick-up or delivery to your home</h2>
             <div class="mybutton-white text-center">
             <a href="#">Shop Now</a>
           </div>
@@ -93,6 +96,7 @@ li{
   display: inline;
   padding-right: 14px;
   color: $daisy;
+  cursor: pointer;
   a{
     color: $daisy;
     text-decoration: none;
@@ -119,4 +123,5 @@ li{
         color: $white;
     }
 }
+
 </style>

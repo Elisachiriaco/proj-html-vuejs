@@ -6,12 +6,24 @@
                 <h2>Tell us what you have in mind</h2>
                 <div class="number">01</div>
             </div>
-            <div class="col-4">
+            <div class="col-4"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper"
+                data-aos-easing="ease-in-sine">
                 <span class="subtitle">Manual ingredients selection</span>
                 <p>Cras consequat lectus vestibulum tortor pulvinar,quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat,rutrum augue.</p>
             </div>
         </div>
-        <div class="row py-3">
+        <div class="row py-3"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper"
+                data-aos-easing="linear">
             <div class="col-6 baking p-4">
                 <h2>We start baking</h2>
                 <div class="number">02</div>
@@ -31,7 +43,13 @@
                 <h2>Delivered to your home</h2>
                 <div class="number">03</div>
             </div>
-            <div class="col-4">
+            <div class="col-4"                 
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper"
+                data-aos-easing="ease-in-sine">
                 <span class="subtitle">Baked to order & gift wrapped</span>
                 <p>Cras consequat lectus vestibulum tortor pulvinar,quis euismod nisl varius. Ut eu laoreet ex. Aliquam erat volutpat. Nullam quis sagittis nibh. Morbi consectetur ultricies ante ac congue. Donec lorem erat, finibus in velit placerat,rutrum augue.</p>
             </div>
@@ -45,7 +63,10 @@
                 <h3>Visit our Bakeries</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="col-6 newyork"></div>
             <div class="col-6 london"></div>
         </div>
@@ -77,7 +98,11 @@
             <div class="col-6 social-instagram d-flex align-items-center">
             <div class="col-12 justify-content-center text-center">
                 <span class="subtitle">Made for sharing</span>
-                <h3>Let's stay in touch</h3>
+                <h3 class="stay"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+                data-aos-offset="0">Let's stay in touch</h3>
                 <span class="mybutton-violet px-4 py-2"><a href="#"><i class="fa-brands fa-instagram"></i>Follow us</a></span>
             </div>
             </div>
@@ -178,7 +203,6 @@ img{
     cursor: pointer;
     overflow: hidden;
     &:hover{
-        transform: scale(1.1, 1.1);
         opacity: 0.9;
     }
 }
@@ -189,7 +213,6 @@ img{
     transition: all 1s;
     cursor: pointer;
     &:hover{
-        transform: scale(1.1, 1.1);
         opacity: 0.9;
     }
 }
@@ -213,5 +236,10 @@ img{
     text-transform: uppercase;
     color: $grey;
     font-size: 10px;
+}
+.stay{
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 </style>

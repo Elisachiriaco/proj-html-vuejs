@@ -12,7 +12,13 @@
           <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
       </div>
-      <div class="row header-bg">
+      <div class="row header-bg"
+                data-aos-duration="2000"
+                data-aos-id="super-duper"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
         <div class="col-4">
           <span class="subtitle">Fresh & tasty bakery every day</span>
           <h1>The Perfect Fresh Bread</h1>
@@ -67,6 +73,12 @@ li{
   a{
     color: $daisy;
     text-decoration: none;
+  }
+  &:hover{
+    border-bottom: 1px solid $daisy;
+    transition: all 1s;
+    position: relative;
+    top: -5px;
   }
 }
 

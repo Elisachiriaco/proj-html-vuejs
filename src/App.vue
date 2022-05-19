@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import AOS from "aos";
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -31,8 +32,11 @@ export default {
       datimyFooter : dati.myFooter,
       datiCopyright : dati.copyright,
       datimySlider : dati.slider,
+    };
+  },
+    created(){
+      AOS.init();
     }
-  }
 }
 </script>
 

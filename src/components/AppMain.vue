@@ -2,14 +2,24 @@
     <div class="container">
         <section id="shop">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4"         
+                data-aos="zoom-in-left"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper">
                     <span class="subtitle">Our products</span>
                     <h3>All our delectable pastries are backed fresh in our Kitchen very morning,and are made with all-natural, all organic ingredients.</h3>
                     <div class="mybutton-violet text-center">
                         <a href="#">Start Shopping</a>
                     </div>
                 </div>
-                <div class="col-8 d-flex flex-nowrap cookies justify-content-end">
+                <div class="col-8 d-flex flex-nowrap cookies justify-content-end"
+                data-aos="zoom-in-left"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper">
                     <div v-for="(image, index) in datimySlider" :key="index">
                     <img :src="image.image" alt="cookies">
                     </div>
@@ -46,7 +56,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 event pt-2 justify-content-center">
+                <div class="col-6 event pt-2 justify-content-center" 
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+                data-aos-delay="1000"
+                data-aos-id="super-duper">
                     <img class="img-hover" src="../assets/images/corporate-hover-bg.jpg" alt="">
                     <div class="text-hover text-center">
                     <span>International Bakery</span>
@@ -56,7 +71,12 @@
                     </div>
                     </div>
                 </div>
-                <div class="col-6 wedding pt-2 justify-content-center">
+                <div class="col-6 wedding pt-2 justify-content-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-offset="0"
+                data-aos-delay="500"
+                data-aos-id="super-duper">
                     <img class="img-hover" src="../assets/images/wedding-hover-bg.jpg" alt="">
                     <div class="text-hover text-center">
                     <span>Private dining hall</span>
@@ -68,7 +88,12 @@
                 </div>
             </div>
 
-            <div class="row shop">
+            <div class="row shop"
+                data-aos="zoom-in-right"
+                data-aos-duration="2000"
+                data-aos-offset="0"
+                data-aos-delay="1000"
+                data-aos-id="super-duper">
                 <div class="col-4 text-center justify-content-center">
                     <h3>Find a freshly baked product perfect for you </h3>
                     <p>Integer a nihb vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.</p>
@@ -119,10 +144,10 @@ export default {
     },
     props : ["datimySlider"],
     data(){
-        return{
-        }
+
     },
     methods : {
+
     }
 }
 </script>
@@ -131,6 +156,7 @@ export default {
 @import '../style/vars.scss';
 .cookies{
     position: relative;
+    transition-duration: 2s;
     img{
         width: 350px;
         padding: 5px;
@@ -139,6 +165,7 @@ export default {
 }
 .cookies:hover .hover-cookies{
     display: inline-block;
+    transition: all 2s;
 }
 .cookies:hover .hover-cookiesrg{
     display: inline-block;
@@ -156,7 +183,7 @@ export default {
     z-index: 30;
     color: $white;
     display: none;
-    background-color: rgba($color: $black, $alpha: 0.2);
+    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 35%, rgba(0,0,0,0.6) 100%);
     width: 340px;
     height: 94%;
 }
@@ -167,7 +194,7 @@ export default {
     width: 340px;
     height: 94%;
     display: none;
-    background-color: rgba($color: $black, $alpha: 0.2);
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 35%, rgba(0,0,0,0.2) 100%);
     color: $white;
     z-index: 30;
 }
@@ -235,7 +262,7 @@ section{
     background-repeat: no-repeat;
     position: relative;
     height: 500px;
-    transition: all 1s;
+    transition: 1s ease-in-out;
 }
 .event:hover .img-hover{
     display: inline-block;
@@ -255,7 +282,7 @@ section{
     background-repeat: no-repeat;
     position: relative;
     height:500px;
-    transition: all 1s;
+    transition: 1s ease-in-out;
 }
 .img-hover{
     display: none;

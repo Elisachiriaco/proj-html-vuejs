@@ -4,7 +4,7 @@
     <app-header :datimyNav = "datimyNav" />
     </header>
     <main>
-      <app-main :datimySlider = "datimySlider" />
+      <app-main :datimySlider = "datimySlider" :datiSecondSlider = "datiSecondSlider" />
     </main>
     <footer>
       <app-footer :datimyFooter = "datimyFooter" :datiCopyright = "datiCopyright"/>
@@ -32,6 +32,7 @@ export default {
       datimyFooter : dati.myFooter,
       datiCopyright : dati.copyright,
       datimySlider : dati.slider,
+      datiSecondSlider : dati.secondSlider
     };
   },
     created(){

@@ -104,29 +104,29 @@
                     </span>
                 </div>
                 <div class="col-8 d-flex flex-nowrap cookies justify-content-end">
-                    <div class="smarrow-left">
+                    <div class="smarrow-left" @click="prevSlide(activeIndex)">
                         <i class="fa-solid fa-angle-left"></i>
                     </div>
                 <div>
-                    <img src="../assets/images/choco-chip-cookies-200x255.jpg" alt="cookies">
-                    <h4>Choco Chip Cookies</h4>
-                    <p class="price">$19.00 - $39.00</p>
+                    <img :src="datiSecondSlider[activeIndex].img" alt="cookies">
+                    <h4>{{datiSecondSlider[activeIndex].title}}</h4>
+                    <p class="price">{{datiSecondSlider[activeIndex].price}}</p>
                 </div>
                 <div>
-                    <img src="../assets/images/strawberry-jam-cookies-200x255.jpg" alt="cookies">
-                    <h4>Strawberry Jam Cookies</h4>
-                    <p class="price">$24.00 - $62.00</p>
+                    <img :src="datiSecondSlider[activeIndex].secondImg" alt="cookies">
+                    <h4>{{datiSecondSlider[activeIndex].secondTitle}}</h4>
+                    <p class="price">{{datiSecondSlider[activeIndex].secondPrice}}</p>
                 </div>
                 <div>
-                    <img src="../assets/images/strawberry-donut-200x255.jpg" alt="donuts">
-                    <h4>Strawberry Donut</h4>
-                    <p class="price">$24.00 - $42.00</p>
+                    <img :src="datiSecondSlider[activeIndex].thirdImg" alt="donuts">
+                    <h4>{{datiSecondSlider[activeIndex].thirdTitle}}</h4>
+                    <p class="price">{{datiSecondSlider[activeIndex].thirdPrice}}</p>
                 </div>
                 <div>
-                    <img src="../assets/images/perfect-macarons-200x255.jpg" alt="macarons">
-                    <h4>Perfect Macarons</h4>
-                    <p class="price">$18.00 - $52.00</p>
-                    <div class="smarrow-right">
+                    <img :src="datiSecondSlider[activeIndex].fourthImg" alt="macarons">
+                    <h4>{{datiSecondSlider[activeIndex].fourthTitle}}</h4>
+                    <p class="price">{{datiSecondSlider[activeIndex].fourthPrice}}</p>
+                    <div class="smarrow-right" @click="nextSlide(activeIndex)">
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                 </div>
@@ -144,7 +144,7 @@ export default {
     components: {
         AppCard
     },
-    props : ["datimySlider"],
+    props : ["datimySlider", "datiSecondSlider"],
     data(){
         return{
             activeIndex : 0,
@@ -153,10 +153,10 @@ export default {
     },
       methods: {
         nextSlide(){
-            this.activeIndex = (this.activeIndex === 4) ? 0 : this.activeIndex + 1;
+            this.activeIndex = (this.activeIndex === 4) ? 0 : this.activeIndex +=1;
         },
         prevSlide(){
-            this.activeIndex = (this.activeIndex === 0) ? 4 : this.activeIndex - 1;
+            this.activeIndex = (this.activeIndex === 0) ? 4 : this.activeIndex -=1;
         },
         autoScroll(){
             this.intervalId = setInterval(()=>{
@@ -265,8 +265,12 @@ section{
     background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
+    cursor: pointer;
     i{
         font-size: 8px;
+    }
+    &:hover{
+        background-color: $perfume;
     }
 }
 
@@ -280,8 +284,12 @@ section{
     background-color: rgba($color: $perfume, $alpha: 0.7);
     color: $white;
     text-align: center;
+    cursor: pointer;
     i{
         font-size: 8px;
+    }
+    &:hover{
+        background-color: $perfume;
     }
 }
 

@@ -95,7 +95,8 @@
                 data-aos-duration="2000"
                 data-aos-offset="0"
                 data-aos-delay="1000"
-                data-aos-id="super-duper">
+                data-aos-id="super-duper"
+                tabindex="0" @muoseleave="autoScroll" @mouseover="stopAutoScroll">
                 <div class="col-4 text-center justify-content-center">
                     <h3>Find a freshly baked product perfect for you </h3>
                     <p>Integer a nihb vitae ex porttitor rutrum et ut velit. Etiam ac felis at leo feugiat placerat. Sed ac nulla id orci tempor convallis sed.</p>
@@ -153,10 +154,10 @@ export default {
     },
       methods: {
         nextSlide(){
-            this.activeIndex = (this.activeIndex === 4) ? 0 : this.activeIndex +=1;
+            this.activeIndex = (this.activeIndex === 1) ? 0 : this.activeIndex +=1;
         },
         prevSlide(){
-            this.activeIndex = (this.activeIndex === 0) ? 4 : this.activeIndex -=1;
+            this.activeIndex = (this.activeIndex === 0) ? 1 : this.activeIndex -=1;
         },
         autoScroll(){
             this.intervalId = setInterval(()=>{

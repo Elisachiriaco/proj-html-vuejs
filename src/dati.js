@@ -80,20 +80,6 @@ const myDati = {
             fourthTitle : 'Blackberry Stuffed Bread',
             fourthPrice : '$22.00 – $46.00',
         },
-        {
-            img : require ('./assets/images/glazed-pancake-with-lemon-200x255.jpg'),
-            title : 'Glazed Bread with Fruits',
-            price : '$36.00 $24.00',
-            secondImg : require ('./assets/images/small-cupcake-200x255.jpg'),
-            secondTitle : 'Chocolate Cupcake',
-            secondPrice : '$26.00 – $68.00',
-            thirdImg : require ('./assets/images/perfect-macarons-200x255.jpg'),
-            thirdTitle : 'Perfect Macarons',
-            thirdPrice : '$32.00 – $56.00',
-            fourthImg : require ('./assets/images/cherry-cake-200x255.jpg'),
-            fourthTitle : 'Cake with Cherry Topping',
-            fourthPrice : '$99.00',
-        },
     ],
     myFooter : [
         {
